@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1A1C21;
+  background: white;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid #D9DCE2;
+}
+
+.cabecera h1 {
+  margin: 0;
+}
+
+.cabecera p {
+  margin: 5px 0 0;
+  color: #5A606B;
+}
+
+.dividida {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lado-derecho {
+  border-left: 3px solid #52596770;
+}
+
+.rotulo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 12px 20px;
+  background: #F3F4F6;
+}
+
+.rotulo-amarillo {
+  display: flex;
+  align-items: center;
+  background: #F2D43D;
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.tarjeta {
+  border: 1px solid #D9DCE2;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.pestanas button {
+  padding: 8px 14px;
+  border: 1px solid #D9DCE2;
+  background: #F3F4F6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pestanas button.activa {
+  background: #1A1C21;
+  color: white;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.visible {
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .dividida {
+    grid-template-columns: 1fr;
+  }
+
+  .lado-derecho {
+    border-left: none;
+    border-top: 3px solid #52596770;
+  }
+}

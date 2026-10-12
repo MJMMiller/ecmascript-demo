@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECMAScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <h1>ECMAScript (JavaScript)</h1>
+  </header>
+
+  <main class="dividida">
+
+    <section class="lado">
+      <h2 class="rotulo">HTML + CSS</h2>
+      <div class="contenido">
+        <div class="tarjeta"><b>ECMAScript:</b> es el estándar que define cómo debe funcionar el lenguaje. Lo publica Ecma International a través del comité TC39.</div>
+        <div class="tarjeta"><b>JavaScript:</b> es la implementación más conocida de ese estándar, la que usan los navegadores.</div>
+        <div class="tarjeta"><b>Motor:</b> el navegador tiene un motor (por ejemplo, V8 en Chrome) que lee y ejecuta el código.</div>
+        <div class="tarjeta"><b>Versiones:</b> ES2015 (ES6) agregó <code>let</code>, <code>const</code> y las funciones flecha.</div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <section class="lado lado-derecho">
+      <h2 class="rotulo rotulo-amarillo">HTML + CSS + JS</h2>
+      <div class="contenido">
+        <div class="pestanas">
+          <button class="activa" data-panel="p1">ECMAScript</button>
+          <button data-panel="p2">JavaScript</button>
+          <button data-panel="p3">Motor</button>
+          <button data-panel="p4">Versiones</button>
+        </div>
+
+        <div id="p1" class="panel tarjeta visible"><b>ECMAScript:</b> es el estándar que define cómo debe funcionar el lenguaje. Lo publica Ecma International a través del comité TC39.</div>
+        <div id="p2" class="panel tarjeta"><b>JavaScript:</b> es la implementación más conocida de ese estándar, la que usan los navegadores.</div>
+        <div id="p3" class="panel tarjeta"><b>Motor:</b> el navegador tiene un motor (por ejemplo, V8 en Chrome) que lee y ejecuta el código.</div>
+        <div id="p4" class="panel tarjeta"><b>Versiones:</b> ES2015 (ES6) agregó <code>let</code>, <code>const</code> y las funciones flecha.</div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
